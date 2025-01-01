@@ -1,6 +1,6 @@
 # News Aggregator
 
-**News Aggregator** is a news collection and aggregation platform that fetches and displays categorized news content from the RSS feed of News18 Tamil. The application allows users to browse news by categories like sports, health, etc., and provides personalized news content based on user interactions. It also enables fetching local news by city or district.
+**News Aggregator** is a news collection and aggregation platform that fetches and displays categorized news content . The application allows users to browse news by categories like sports, health, etc., and provides personalized news content based on user interactions. It also enables fetching local news by city or district.
 
 ---
 
@@ -9,25 +9,23 @@
 
 - **Aggregated News Feed**: Collects news from the RSS feed of News18 Tamil and displays them in a categorized manner (e.g., sports, health, technology, etc.).
 - **Localized News**: Users can fetch news relevant to their location, such as news from a specific city or district.
-- **Personalized Feed**: The application provides a personalized feed based on the user's interactions with the content (likes, shares, etc.).
+- **Personalized Feed**: The application provides a personalized feed based on the user's interactions with the content .
 - **Categorized Content**: News is sorted into various categories like sports, health, entertainment, etc., for easier browsing.
 
 ---
 
 ## Technologies Used
 
-- **Frontend**: HTML, CSS, JavaScript (optional: React or other frontend frameworks)
-- **Backend**: Python (Flask or Django)
+- **Frontend**: HTML, CSS
+- **Backend**: Python (Flask)
 - **RSS Feed Parsing**: `feedparser` (Python library for parsing RSS feeds)
-- **Database**: SQLite or any other database (for storing user preferences and interactions)
-- **User Authentication**: Optional (using libraries like Flask-Login or Django Auth)
-- **Personalization**: Basic algorithms or simple content-based filtering for personalized feeds
-
+- **API**: Google Translator API
+  
 ---
 ## API Documentation
 
 - For News18 Tamil RSS feed  ,refer **https://tamil.news18.com/rss/**
-- For Rapid API, refer **https://rapidapi.com/**
+- For Rapid(Google Translate) API, refer **https://rapidapi.com/**
 ## Screenshots
 
 ### Home Page
@@ -69,9 +67,7 @@ To get started, follow these steps:
 ## Future Improvemetnts:
 
 - Advanced Personalization: Implement machine learning models to personalize the news feed even further based on user reading patterns.
-- User Interaction Tracking: Track user interactions (e.g., clicks, time spent on articles) to improve the personalized feed.
 - Search Functionality: Allow users to search for specific news articles or categories.
-- Push Notifications: Implement push notifications for breaking news.
 - Localization Support: Add support for multiple languages and regions for a broader audience.
 - Mobile App Version: Build a mobile app version of the aggregator for a better user experience.
   
