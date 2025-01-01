@@ -31,14 +31,16 @@
 ## Screenshots
 
 ### Home Page
-![Home Page Screenshot](https://github.com/bssshyamsundhar/Medefine/blob/main/static/screenshots/home_page.png)
+![Home Page Screenshot](https://github.com/bssshyamsundhar/news-aggregator/blob/master/home.png)
 
-### Search Functionality
-![Result Page Screenshot](https://github.com/bssshyamsundhar/Medefine/blob/main/static/screenshots/result_page.png)
+### Local News
+![Local news Page Screenshot](https://github.com/bssshyamsundhar/news-aggregator/blob/master/local.png)
 
-### Favorites Page
-![Favorites Page Screenshot](https://github.com/bssshyamsundhar/Medefine/blob/main/static/screenshots/favorites_page.png)
+### Personalized News
+![Personalized news Page Screenshot](https://github.com/bssshyamsundhar/news-aggregator/blob/master/my_feed.png)
 
+### Categorized News
+![Categorized news page Screenshot](https://github.com/bssshyamsundhar/news-aggregator/blob/master/sports.png)
 
 ## Installation and Running the App
 
