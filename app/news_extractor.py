@@ -31,7 +31,7 @@ class News18RSSExtractor:
             'sports': 'sports',
             'health': 'health',
             'fashion': 'fashion',
-            'entetainment': 'entertainment',
+            'entertainment': 'entertainment',
             'memes' : 'memes',
             'cinema':'cinema',
             'ipl':'ipl',

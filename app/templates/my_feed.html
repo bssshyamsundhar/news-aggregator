@@ -11,6 +11,12 @@
         <a href="{{ news.link }}" target="_blank">{{ news.title }}</a>
         <p>{{ news.description }}</p>
         <span>{{ news.published }}</span>
+        {% if news.image %}
+        <div class="news-image">
+            <img src="{{ news.image }}" alt="News Image" style="max-width: 200px; height: auto;">
+        </div>
+        {% endif %}
+        </div>
     </li>
     {% endfor %}
 </ul>
