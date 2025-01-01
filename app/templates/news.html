@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block title %}Local News{% endblock %}
+
+{% block content %}
+<h2>Local News for {{ location.title() }}</h2>
+<div class="news-list">
+    {% for news in news_items %}
+    <div class="news-item">
+        
+        <div class="news-content">
+            <h3><a href="{{ news.link }}" target="_blank">{{ news.title }}</a></h3>
+            <p>{{ news.description }}</p>
+            <p><small>Published: {{ news.published }}</small></p>
+            {% if news.image %}
+        <div class="news-image">
+            <img src="{{ news.image }}" alt="News Image" style="max-width: 200px; height: auto;">
+        </div>
+        {% endif %}
+        </div>
+    </div>
+    <hr>
+    {% endfor %}
+</div>
+{% endblock %}

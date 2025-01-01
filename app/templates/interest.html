@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block title %}News by Interest{% endblock %}
+
+{% block content %}
+<h2>News on {{ interest.title() }}</h2>
+<ul>
+    {% for news in news_items %}
+    <li>
+        <a href="{{ news.link }}" target="_blank">{{ news.title }}</a>
+        <p>{{ news.description }}</p>
+        
+        <span>{{ news.published }}</span>
+    </li>
+    {% endfor %}
+</ul>
+{% endblock %}

@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+<h2>Choose Your Location and Interest</h2>
+<form id="locationForm" method="POST" action="{{ url_for('get_local_news') }}">
+    <select name="location" required>
+        <option value="">Select Location</option>
+        {% for location in locations %}
+        <option value="{{ location }}">{{ location.title() }}</option>
+        {% endfor %}
+    </select>
+    <button type="submit">Get Local News</button>
+</form>
+
+<h3>Choose an Interest</h3>
+<div class="interest-buttons">
+    {% for interest in interests %}
+    <form method="POST" action="{{ url_for('get_interest_news') }}" style="display: inline;">
+        <input type="hidden" name="interest" value="{{ interest }}">
+        <button type="submit">{{ interest.title() }}</button>
+    </form>
+    {% endfor %}
+</div>
+
+<!-- Button to access My Feed -->
+<form id="myFeedForm" method="GET" action="{{ url_for('get_my_feed') }}">
+    <button type="submit">View My Feed</button>
+</form>
+{% endblock %}
