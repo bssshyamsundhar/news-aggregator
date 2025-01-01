@@ -26,8 +26,8 @@
 ---
 ## API Documentation
 
-- For Merraim-Webster api doumentation ,refer **https://www.dictionaryapi.com/products/json.**
-
+- For News18 Tamil RSS feed  ,refer **https://tamil.news18.com/rss/**
+- For Rapid API, refer **https://rapidapi.com/**
 ## Screenshots
 
 ### Home Page
